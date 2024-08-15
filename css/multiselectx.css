@@ -1,0 +1,70 @@
+#multiSelectX {
+    width: 100%; /* fixed width */
+    /* border: 1px solid #ccc; light border */
+    border-radius: 8px; 
+    height: 100%; 
+    overflow-y: auto; 
+    /* background-color: #f9f9f9; light background */
+    color: #5f656e; /* dark text */
+}
+
+#searchInputX {
+    width: 100%; 
+    /* margin-bottom: 10px; */
+    border: 1px solid #bbb; /* light gray border */
+    border-radius: 5px; 
+    padding: 6px; 
+    font-size: 14px; 
+    background-color: #fff; /* light background for input field */
+    color: #333; /* dark text */
+}
+
+#searchInputX:focus {
+    /* border-color: #0075ff; darker border on focus */
+    outline: none; 
+}
+
+#optionsX { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* font for options */
+}
+
+#optionsX label {
+    padding: 0 15px 0 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+#optionsX label:hover {
+    background-color: #f5f5f5;
+}
+
+#searchContainer {
+    position: fixed; /* Fix the element */
+    top: 0; /* Attach to the top of the page */
+    left: 0;
+    right: 0;
+    background-color: white; /* Background for text readability */
+    padding: 10px; /* Padding for aesthetics */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for emphasis */
+    z-index: 1000; /* Increase index to be above other elements */
+}
+
+.fixed-search {
+    position: relative; /* set relative positioning for the parent */
+}
+
+.fixed-search-sticky {
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 1;
+    width: 100%;
+    padding: 15px 15px 15px 15px;
+}
+
+input[type="checkbox"] {
+    margin: 0;
+}
