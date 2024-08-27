@@ -56,7 +56,7 @@ document.head.appendChild(link);
         });
 
         // Function to update the order of items
-        function updateOptions() {
+        const updateOptions = () => {
             let selectedOptions = $optionsContainer.find('input:checked').parent(); // selected options
             let allOptions = $optionsContainer.find('label').not(selectedOptions); // all options except selected
             $optionsContainer.empty().append(selectedOptions).append(allOptions);
@@ -86,6 +86,9 @@ document.head.appendChild(link);
 
         // Initial sorting
         updateOptions();
+
+        // Expose updateOptions function
+        this.updateOptions = updateOptions;
 
         // Return for chaining
         return this;

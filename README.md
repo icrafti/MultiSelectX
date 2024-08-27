@@ -13,6 +13,7 @@ MultiSelectX is a lightweight jQuery plugin that enhances the standard multi-sel
 - **Search Functionality**: Quickly find options using a live search input, making it easy to locate items from large datasets.
 - **Smart Sorting**: Selected options move to the top, ensuring users can identify their choices at a glance.
 - **Lightweight and Easy to Use**: With a simple plugin interface, integrating MultiSelectX into your project is a breeze.
+- **Easy list update**: You can call list update via any javascript.
 
 ## Setup
 
@@ -74,6 +75,19 @@ $(document).ready(function() {
         ]
     });
 });
+```
+
+Call updateOptions from any JavaScript (jQuery):
+
+```javascript
+$(document).ready(function() {
+    const $multiSelect = $('#myMultiSelect').multiSelectX({
+        jsonData: yourData
+    });
+
+    // Now we can call updateOptions
+    $multiSelect.updateOptions();
+}); 
 ```
 
 ## License
